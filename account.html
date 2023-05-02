@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="media_queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         #parent {
@@ -79,24 +80,31 @@
 
             <div id="top">
                 <div>
-                    <img onclick="window.location.href = `./homepage.html`" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141" alt="Brand_logo">
+
+                </div>
+                <div id="brand_logo">
+                    <img onclick="window.location.href = `./homepage.html`"
+                        src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141"
+                        alt="Brand_logo" />
                 </div>
 
-                <div>
-                    <button style="font-size:20px;  color: rgba(0, 0, 0, 0.598);"><i class="fa fa-search"></i></button>
-                    <p style="margin-top: 2px;"> SEARCH </p>
-                    <img src="https://img.icons8.com/ios/512/user.png" alt="account">
-                    <img src="https://img.icons8.com/ios/512/shopping-bag.png" alt="bag">
+                <div id="top_navigators">
+                    <p> <img src="https://img.icons8.com/?size=512&id=132&format=png" alt=""> SEARCH </p>
+                    <img id="user" onclick="check()" src="https://img.icons8.com/ios/512/user.png" alt="account">
+                    <img id="heart" src="https://img.icons8.com/?size=512&id=87&format=png" alt="">
+                    <img id="bag" src="https://img.icons8.com/?size=512&id=3686&format=png" alt="">
                 </div>
             </div>
 
             <div id="mid">
 
                 <div class="dropdown">
-                    <p onclick="window.location.href = `./clothing.html`" class="hover-underline-animation"> CLOTHING </p>
+                    <p onclick="window.location.href = `./clothing.html`" class="hover-underline-animation"> CLOTHING
+                    </p>
                     <div class="dropdown-menu">
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/women.jpg?v=1613619704" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/women.jpg?v=1613619704"
+                                alt="">
                             <h6> DRESSES </h6>
                             <p> UPTO 80% OFF </p>
                         </div>
@@ -189,7 +197,7 @@
                             <li><a href="#"> Sandals & Flip Flops </a></li>
                             <li><a href="#"> Slippers </a></li>
                             <li><a href="#"> Sneakers </a></li>
-                            
+
                         </div>
 
                         <div class="slideUp">
@@ -219,14 +227,15 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="dropdown">
                     <p class="hover-underline-animation"> HANDBAGS & ACCESORIES </p>
 
                     <div class="dropdown-menu">
 
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag2.jpg?v=1613619716" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag2.jpg?v=1613619716"
+                                alt="">
                             <h6> SATCHELS </h6>
                             <p> UPTO 60% OFF </p>
                         </div>
@@ -276,7 +285,7 @@
                             <li><a href="#"> Shoulder Bags </a></li>
                             <li><a href="#"> Tote Bags </a></li>
                             <li><a href="#"> Wallets & Cardholders </a></li>
-                            
+
                         </div>
 
                         <div class="slideUp">
@@ -292,7 +301,7 @@
                             <li><a href="#"> Sunglasses </a></li>
                         </div>
 
-                    </div>   
+                    </div>
 
                 </div>
 
@@ -300,7 +309,8 @@
                     <p class="hover-underline-animation"> DESIGNERS </p>
                     <div class="dropdown-menu">
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1613619701" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1613619701"
+                                alt="">
                             <h6> GUCCI </h6>
                             <p> UPTO 64% OFF </p>
                         </div>
@@ -344,12 +354,13 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="dropdown">
                     <p class="hover-underline-animation"> SUNGLASSES </p>
                     <div class="dropdown-menu">
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/sunglasses_df9c0648-8d79-459a-ad8d-a7c1869f40db.jpg?v=1613619719" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/sunglasses_df9c0648-8d79-459a-ad8d-a7c1869f40db.jpg?v=1613619719"
+                                alt="">
                             <h6> SUNGLASSES </h6>
                             <p> UPTO 80% OFF </p>
                         </div>
@@ -400,7 +411,8 @@
                     <p class="hover-underline-animation"> JEWELRY & WATCHES </p>
                     <div class="dropdown-menu">
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/watch.jpg?v=1613619725" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/watch.jpg?v=1613619725"
+                                alt="">
                             <h6> WATCHES </h6>
                             <p> UPTO 80% OFF </p>
                         </div>
@@ -505,7 +517,8 @@
                     <p class="hover-underline-animation" style="color: red;"> CLEARENCE </p>
                     <div class="dropdown-menu">
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/clearance_8fa5acf3-7405-41aa-8c98-b0891649c9ab.jpg?v=1613619722" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/clearance_8fa5acf3-7405-41aa-8c98-b0891649c9ab.jpg?v=1613619722"
+                                alt="">
                             <h6> CLEARANCE </h6>
                             <p> 70-90% OFF </p>
                         </div>
@@ -548,9 +561,9 @@
                 </div>
 
             </div>
-           
+
         </div>
-        
+
     </div>
     <div id="parent">
         <div>
@@ -564,7 +577,7 @@
                     <label for="" id="l2">LAST NAME</label><br>
                     <input type="text" id="lname"><br>
                     <label for="" id="l3">EMAIL</label><br>
-                    <input type="email" id="email" ><br>
+                    <input type="email" id="email"><br>
                     <label for="" id="l4">PASSWORD</label><br>
                     <input type="password" id="password" minlength="8" required><br>
                     <div id="checkbox">

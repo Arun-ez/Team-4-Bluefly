@@ -8,19 +8,23 @@
     <title>Dresses</title>
     <link rel="stylesheet" href="dress.css">
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="media_queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
 </head>
 
 <body>
     <div id="header">
 
         <div id="banner">
-            
+
             <div>
-                <h3> <pre> End &nbsp;of&nbsp; Year&nbsp; C L E A R E N C E </pre> </h3>
+                <h3>
+                    <pre> End &nbsp;of&nbsp; Year&nbsp; C L E A R E N C E </pre>
+                </h3>
                 <p style="font-size: 15px;"> EXTRA 15% OFF Select Styles </p>
-                <p style="font-size: 14px"> Featuring: Valentino,Balenciaga, Bottega Veneta, Stella McCartney & More </p>
+                <p style="font-size: 14px"> Featuring: Valentino,Balenciaga, Bottega Veneta, Stella McCartney & More
+                </p>
             </div>
 
             <!-- <div>
@@ -32,14 +36,19 @@
 
             <div id="top">
                 <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141" alt="Brand_logo">
+
+                </div>
+                <div id="brand_logo">
+                    <img onclick="window.location.href = `./homepage.html`"
+                        src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141"
+                        alt="Brand_logo" />
                 </div>
 
-                <div>
-                    <button style="font-size:20px; color: rgba(0, 0, 0, 0.598);"><i class="fa fa-search"></i></button>
-                    <p style="margin-top: 2px;"> SEARCH </p>
-                    <img src="https://img.icons8.com/ios/512/user.png" alt="account">
-                    <img src="https://img.icons8.com/ios/512/shopping-bag.png" alt="bag">
+                <div id="top_navigators">
+                    <p> <img src="https://img.icons8.com/?size=512&id=132&format=png" alt=""> SEARCH </p>
+                    <img id="user" onclick="check()" src="https://img.icons8.com/ios/512/user.png" alt="account">
+                    <img id="heart" src="https://img.icons8.com/?size=512&id=87&format=png" alt="">
+                    <img id="bag" src="https://img.icons8.com/?size=512&id=3686&format=png" alt="">
                 </div>
             </div>
 
@@ -54,9 +63,9 @@
                 <p class="hover-underline-animation"> BEAUTY </p>
                 <p class="hover-underline-animation" style="color: red;"> CLEARENCE </p>
             </div>
-           
+
         </div>
-        
+
     </div>
     <div id="main">
         <div id="left">
@@ -73,7 +82,7 @@
 
 
 
-            <div id="filter" >
+            <div id="filter">
                 <div>
                     <h1>Filter</h1>
                     <div>
@@ -84,34 +93,34 @@
                             <div>
                                 <div class="form">
                                     <form action="">
-                                        <input type="search" name="" class="input" placeholder="Search... " >
+                                        <input type="search" name="" class="input" placeholder="Search... ">
                                     </form>
                                 </div>
                                 <ul id="brandul">
                                     <li>
                                         <div>
-                                            <input type="checkbox" onclick="funclick1()"/>
+                                            <input type="checkbox" onclick="funclick1()" />
                                             <span>AUTUMN CASHMERE</span>
                                             <span>(10142)</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
-                                            <input type="checkbox" onclick="funclick2()"/>
+                                            <input type="checkbox" onclick="funclick2()" />
                                             <span>TAHARI</span>
                                             <span>(3630)</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
-                                            <input type="checkbox" onclick="funclick3()"/>
+                                            <input type="checkbox" onclick="funclick3()" />
                                             <span>TED BAKER</span>
                                             <span>(4105)</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
-                                            <input type="checkbox" onclick="funclick4()"/>
+                                            <input type="checkbox" onclick="funclick4()" />
                                             <span>REAL CASHMERE</span>
                                             <span>(4690)</span>
                                         </div>
@@ -142,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div>
                     <h2>CATEGORY</h2>
                 </div>
@@ -156,35 +165,35 @@
                         <ul id="manufacture-ul">
                             <li>
                                 <div>
-                                    <input type="checkbox" onclick="funclick5()"/>
+                                    <input type="checkbox" onclick="funclick5()" />
                                     <span>Women's Dresses</span>
                                     <span>(11315)</span>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <input type="checkbox" onclick="funclick6()"/>
+                                    <input type="checkbox" onclick="funclick6()" />
                                     <span>Women's Tops</span>
                                     <span>(10721)</span>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <input type="checkbox" onclick="funclick7()"/>
+                                    <input type="checkbox" onclick="funclick7()" />
                                     <span>Women's Pants</span>
                                     <span>(49)</span>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <input type="checkbox" onclick="funclick8()"/>
+                                    <input type="checkbox" onclick="funclick8()" />
                                     <span>Men's Suits</span>
                                     <span>(212)</span>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <input type="checkbox"/>
+                                    <input type="checkbox" />
                                     <span>Men's Pants</span>
                                     <span>(1017)</span>
                                 </div>
@@ -246,15 +255,8 @@
                     <h2>Price</h2>
                 </div>
                 <div>
-                    <input
-                      id="rangeElement"
-                      type="range"
-                      class="swipe-either-way"
-                      oninput="showVal(this.value)"
-                      value="0"
-                      mmin="0"
-                      max="100"
-                    />
+                    <input id="rangeElement" type="range" class="swipe-either-way" oninput="showVal(this.value)"
+                        value="0" mmin="0" max="100" />
                     <span id="kl">0 </span>
                 </div>
                 <div>
@@ -265,11 +267,11 @@
                     <span>Exclude out of stock (372)</span>
                 </div>
             </div>
-            
+
 
         </div>
         <div id="right">
-            
+
             <div>
                 <P>Showing <span>12</span> of <span>230</span> </P>
                 <div>
@@ -291,44 +293,47 @@
             </div>
         </div>
     </div>
-    <hr/>
+    <hr />
     <div id="container">
         <div class="child">
             <div>
-                    <img class="ig" alt="sample" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_400x.jpg" />
-                <br> <br> 
-                <h3 >UP TO 85% OFF THE DENIM SHOP FOR HIM &amp; HER</h3>
-                <p >From Hudson Jeans, Joe's Jeans, J Brand &amp; More</p>
-             
-                <a   href="" >SHOP DENIM</a>
+                <img class="ig" alt="sample"
+                    src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_400x.jpg" />
+                <br> <br>
+                <h3>UP TO 85% OFF THE DENIM SHOP FOR HIM &amp; HER</h3>
+                <p>From Hudson Jeans, Joe's Jeans, J Brand &amp; More</p>
+
+                <a href="">SHOP DENIM</a>
             </div>
             <div>
-                <img alt="sample" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg"/>
-                <br> <br> 
-                <h3 >UP TO 90% OFF TRENDING JUMPSUITS &amp; ROMPERS</h3>
-                <p >Must-Haves From Halston, BCBGMAXAZRIA, Iro &amp; More</p>
-                
-                <a   href="">SHOP JUMPSUITS</a>
-                
+                <img alt="sample"
+                    src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg" />
+                <br> <br>
+                <h3>UP TO 90% OFF TRENDING JUMPSUITS &amp; ROMPERS</h3>
+                <p>Must-Haves From Halston, BCBGMAXAZRIA, Iro &amp; More</p>
+
+                <a href="">SHOP JUMPSUITS</a>
+
 
             </div>
             <div>
-                <img alt="sample" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg"/>
-                <br> <br> 
-                <h3 >UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES</h3>
- 
-                <p >Shop Wallets, Belts, Hats, Sunglasses &amp; More</p>
-                
+                <img alt="sample"
+                    src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg" />
+                <br> <br>
+                <h3>UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES</h3>
+
+                <p>Shop Wallets, Belts, Hats, Sunglasses &amp; More</p>
+
                 <a href="">SHOP WOMEN'S ACCESSORIES</a>
-                
+
             </div>
         </div>
-        
+
 
     </div>
     <div id="footer">
 
-        <div> 
+        <div>
             <div>
                 <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_400x.jpg" alt="Denims">
                 <h2> UP TO 85% OFF THE DENIM SHOP FOR HIM & HER </h2>
@@ -337,14 +342,16 @@
             </div>
 
             <div>
-                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg" alt="Jumpsuits">
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg"
+                    alt="Jumpsuits">
                 <h2> UP TO 90% OFF TRENDING JUMPSUITS & ROMPERS </h2>
                 <p> Must-Haves From Halston, BCBGMAXAZRIA, Iro & More </p>
                 <button> SHOP JUMPSUITS </button>
             </div>
 
             <div>
-                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg" alt="Woman_Accesories">
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg"
+                    alt="Woman_Accesories">
                 <h2> UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES </h2>
                 <p> Shop Wallets, Belts, Hats, Sunglasses & More </p>
                 <button> SHOP WOMEN's ACCESORIES </button>
@@ -380,23 +387,28 @@
                         <input type="submit" value="Subscribe">
                     </form>
                     <div>
-                        <img src="https://img.icons8.com/sf-regular/512/instagram-new.png" alt="instagram" onclick="window.location.href = 'https://www.instagram.com/bluefly/'">
-                        <img style="height: 80%; margin-bottom: 5px;" src="https://img.icons8.com/material-two-tone/512/facebook-f--v2.png" alt="facebook" onclick="window.location.href = 'https://www.facebook.com/Bluefly/'">
+                        <img src="https://img.icons8.com/sf-regular/512/instagram-new.png" alt="instagram"
+                            onclick="window.location.href = 'https://www.instagram.com/bluefly/'">
+                        <img style="height: 80%; margin-bottom: 5px;"
+                            src="https://img.icons8.com/material-two-tone/512/facebook-f--v2.png" alt="facebook"
+                            onclick="window.location.href = 'https://www.facebook.com/Bluefly/'">
                     </div>
                 </div>
 
             </div>
 
             <div id="down">
-                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt="Brand_logo">
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820"
+                    alt="Brand_logo">
                 <p> © 2023 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED. </p>
             </div>
         </div>
-        
+
     </div>
 
 </body>
 <script src="dress.js"></script>
 
 <script src="homepage.js"></script>
+
 </html>

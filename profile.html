@@ -7,31 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account Login</title>
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="media_queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         #parent {
-            /* display: flex; */
-            /* justify-content: center; */
             margin-top: 100px;
             padding: 10px;
             box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
             margin-bottom: 2px;
         }
-        #ch1{
+
+        #ch1 {
             text-align: center;
             margin-bottom: 30px;
         }
-        #ch2{
+
+        #ch2 {
             display: flex;
             justify-content: space-around;
         }
-        #ch1>h1{
+
+        #ch1>h1 {
             font-family: serif;
             font-size: 38px;
             line-height: 38px;
             font-weight: 400;
         }
-        #ch1>button{
+
+        #ch1>button {
             padding: 8px 14px;
             /* margin-top: 15px; */
             font-size: 12px;
@@ -42,11 +45,13 @@
             border: none;
             box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         }
-        #q1{
+
+        #q1 {
             /* border: 2px solid;    */
             margin-left: -130px;
         }
-        #q1>h2{
+
+        #q1>h2 {
             font-size: 32.68px;
             line-height: 32.68px;
             font-weight: 400;
@@ -54,15 +59,18 @@
             color: #000000;
             background-color: #ffffff;
         }
-        #q1>p{
+
+        #q1>p {
             font-size: 16px;
             line-height: 25.6px;
             font-weight: 400;
         }
-        #q2{
+
+        #q2 {
             margin-right: 30px;
         }
-        #q2>h3{
+
+        #q2>h3 {
             font-size: 26px;
             font-weight: 400;
             /* line-height: 26px; */
@@ -70,7 +78,8 @@
             /* border: 2px solid saddlebrown; */
 
         }
-        #np{
+
+        #np {
             font-size: 14px;
             /* line-height: 25.6px; */
             font-weight: 400;
@@ -78,13 +87,13 @@
             font-family: sans-serif;
             color: #000000;
         }
-        #ne{
+
+        #ne {
             font-size: 16px;
             font-weight: 400;
             font-family: sans-serif;
             margin-bottom: -10px;
         }
-
     </style>
 </head>
 
@@ -94,24 +103,31 @@
 
             <div id="top">
                 <div>
-                    <img onclick="window.location.href = `./homepage.html`" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141" alt="Brand_logo">
+
+                </div>
+                <div id="brand_logo">
+                    <img onclick="window.location.href = `./homepage.html`"
+                        src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141"
+                        alt="Brand_logo" />
                 </div>
 
-                <div>
-                    <button style="font-size:20px;  color: rgba(0, 0, 0, 0.598);"><i class="fa fa-search"></i></button>
-                    <p style="margin-top: 2px;"> SEARCH </p>
-                    <img src="https://img.icons8.com/ios/512/user.png" alt="account">
-                    <img src="https://img.icons8.com/ios/512/shopping-bag.png" alt="bag">
+                <div id="top_navigators">
+                    <p> <img src="https://img.icons8.com/?size=512&id=132&format=png" alt=""> SEARCH </p>
+                    <img id="user" onclick="check()" src="https://img.icons8.com/ios/512/user.png" alt="account">
+                    <img id="heart" src="https://img.icons8.com/?size=512&id=87&format=png" alt="">
+                    <img id="bag" src="https://img.icons8.com/?size=512&id=3686&format=png" alt="">
                 </div>
             </div>
 
             <div id="mid">
 
                 <div class="dropdown">
-                    <p onclick="window.location.href = `./clothing.html`" class="hover-underline-animation"> CLOTHING </p>
+                    <p onclick="window.location.href = `./clothing.html`" class="hover-underline-animation"> CLOTHING
+                    </p>
                     <div class="dropdown-menu">
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/women.jpg?v=1613619704" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/women.jpg?v=1613619704"
+                                alt="">
                             <h6> DRESSES </h6>
                             <p> UPTO 80% OFF </p>
                         </div>
@@ -204,7 +220,7 @@
                             <li><a href="#"> Sandals & Flip Flops </a></li>
                             <li><a href="#"> Slippers </a></li>
                             <li><a href="#"> Sneakers </a></li>
-                            
+
                         </div>
 
                         <div class="slideUp">
@@ -234,14 +250,15 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="dropdown">
                     <p class="hover-underline-animation"> HANDBAGS & ACCESORIES </p>
 
                     <div class="dropdown-menu">
 
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag2.jpg?v=1613619716" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag2.jpg?v=1613619716"
+                                alt="">
                             <h6> SATCHELS </h6>
                             <p> UPTO 60% OFF </p>
                         </div>
@@ -291,7 +308,7 @@
                             <li><a href="#"> Shoulder Bags </a></li>
                             <li><a href="#"> Tote Bags </a></li>
                             <li><a href="#"> Wallets & Cardholders </a></li>
-                            
+
                         </div>
 
                         <div class="slideUp">
@@ -307,7 +324,7 @@
                             <li><a href="#"> Sunglasses </a></li>
                         </div>
 
-                    </div>   
+                    </div>
 
                 </div>
 
@@ -315,7 +332,8 @@
                     <p class="hover-underline-animation"> DESIGNERS </p>
                     <div class="dropdown-menu">
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1613619701" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1613619701"
+                                alt="">
                             <h6> GUCCI </h6>
                             <p> UPTO 64% OFF </p>
                         </div>
@@ -359,12 +377,13 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="dropdown">
                     <p class="hover-underline-animation"> SUNGLASSES </p>
                     <div class="dropdown-menu">
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/sunglasses_df9c0648-8d79-459a-ad8d-a7c1869f40db.jpg?v=1613619719" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/sunglasses_df9c0648-8d79-459a-ad8d-a7c1869f40db.jpg?v=1613619719"
+                                alt="">
                             <h6> SUNGLASSES </h6>
                             <p> UPTO 80% OFF </p>
                         </div>
@@ -415,7 +434,8 @@
                     <p class="hover-underline-animation"> JEWELRY & WATCHES </p>
                     <div class="dropdown-menu">
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/watch.jpg?v=1613619725" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/watch.jpg?v=1613619725"
+                                alt="">
                             <h6> WATCHES </h6>
                             <p> UPTO 80% OFF </p>
                         </div>
@@ -520,7 +540,8 @@
                     <p class="hover-underline-animation" style="color: red;"> CLEARENCE </p>
                     <div class="dropdown-menu">
                         <div class="slideUp">
-                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/clearance_8fa5acf3-7405-41aa-8c98-b0891649c9ab.jpg?v=1613619722" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/clearance_8fa5acf3-7405-41aa-8c98-b0891649c9ab.jpg?v=1613619722"
+                                alt="">
                             <h6> CLEARANCE </h6>
                             <p> 70-90% OFF </p>
                         </div>
@@ -563,34 +584,34 @@
                 </div>
 
             </div>
-           
+
         </div>
-        
+
     </div>
 
     <div id="parent">
-            <div id="ch1">
-                <h1>MY ACCOUNT</h1>
-                <button id="lbtn">LOG OUT</button>
+        <div id="ch1">
+            <h1>MY ACCOUNT</h1>
+            <button id="lbtn">LOG OUT</button>
+        </div>
+        <div id="ch2">
+            <div id="q1">
+                <h2>ORDER HISTORY</h2>
+                <p>You haven't placed any orders yet.</p>
             </div>
-            <div id="ch2">
-                <div id="q1">
-                    <h2>ORDER HISTORY</h2>
-                    <p>You haven't placed any orders yet.</p>
-                </div>
-                <div id="q2">
-                    <h3>ACCOUNT DETAILS</h3>
-                    <P id="np"></P>
-                    <p id="ne"></p>
-                    <p>Unites States</p>
-                    <p>View Addresses (1)</p>
-                </div>
+            <div id="q2">
+                <h3>ACCOUNT DETAILS</h3>
+                <P id="np"></P>
+                <p id="ne"></p>
+                <p>Unites States</p>
+                <p>View Addresses (1)</p>
             </div>
+        </div>
     </div>
-    
+
     <div id="footer">
 
-        <div> 
+        <div>
             <div>
                 <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_400x.jpg" alt="Denims">
                 <h2> UP TO 85% OFF THE DENIM SHOP FOR HIM & HER </h2>
@@ -599,14 +620,16 @@
             </div>
 
             <div>
-                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg" alt="Jumpsuits">
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg"
+                    alt="Jumpsuits">
                 <h2> UP TO 90% OFF TRENDING JUMPSUITS & ROMPERS </h2>
                 <p> Must-Haves From Halston, BCBGMAXAZRIA, Iro & More </p>
                 <button> SHOP JUMPSUITS </button>
             </div>
 
             <div>
-                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg" alt="Woman_Accesories">
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg"
+                    alt="Woman_Accesories">
                 <h2> UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES </h2>
                 <p> Shop Wallets, Belts, Hats, Sunglasses & More </p>
                 <button> SHOP WOMEN's ACCESORIES </button>
@@ -642,35 +665,39 @@
                         <input type="submit" value="Subscribe">
                     </form>
                     <div>
-                        <img src="https://img.icons8.com/sf-regular/512/instagram-new.png" alt="instagram" onclick="window.location.href = 'https://www.instagram.com/bluefly/'">
-                        <img style="height: 80%; margin-bottom: 5px;" src="https://img.icons8.com/material-two-tone/512/facebook-f--v2.png" alt="facebook" onclick="window.location.href = 'https://www.facebook.com/Bluefly/'">
+                        <img src="https://img.icons8.com/sf-regular/512/instagram-new.png" alt="instagram"
+                            onclick="window.location.href = 'https://www.instagram.com/bluefly/'">
+                        <img style="height: 80%; margin-bottom: 5px;"
+                            src="https://img.icons8.com/material-two-tone/512/facebook-f--v2.png" alt="facebook"
+                            onclick="window.location.href = 'https://www.facebook.com/Bluefly/'">
                     </div>
                 </div>
 
             </div>
 
             <div id="down">
-                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt="Brand_logo">
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820"
+                    alt="Brand_logo">
                 <p> © 2023 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED. </p>
             </div>
         </div>
-        
+
     </div>
 </body>
 
 </html>
 <script>
-    var fd=JSON.parse(localStorage.getItem('fetchdata')) || []
-    var name=fd[fd.length-1].name
-    var lname=fd[fd.length-1].lname
-    console.log(name+" "+lname)
-    document.querySelector('#np').textContent=name+" "+lname
-    document.querySelector('#ne').textContent=fd[fd.length-1].email
+    var fd = JSON.parse(localStorage.getItem('fetchdata')) || []
+    var name = fd[fd.length - 1].name
+    var lname = fd[fd.length - 1].lname
+    console.log(name + " " + lname)
+    document.querySelector('#np').textContent = name + " " + lname
+    document.querySelector('#ne').textContent = fd[fd.length - 1].email
 
     document.querySelector('#lbtn').addEventListener('click', homefun)
 
-    function homefun(){
+    function homefun() {
         localStorage.setItem("login", "0");
-        window.location="homepage.html"
+        window.location = "homepage.html"
     }
 </script>

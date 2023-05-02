@@ -1,76 +1,84 @@
-
 /* Medium screen */
-@media all and (max-width: 1100px) and (min-width:601px) {
+@media all and (max-width: 1100px) and (min-width:700px) {
 
-    #navbar > #top > div:nth-child(1) {
-        margin-left: auto;
+    #brand_logo>img {
+        width: 190px;
     }
 
-    /* #navbar > #mid {
-        width: 80%;
-    } */
-
-    /* #mid > div > p {
-        font-size: 9px;
-        letter-spacing: 1px;
-        text-align: center!important;
-    } */
-
-    #catagory > div {
-        grid-template-columns: repeat(2,1fr);
+    #top_navigators>p {
+        font-size: 13px;
     }
 
-    #newArrival > div {
-        grid-template-columns: repeat(2,1fr);
+    #top_navigators>p>img {
+        width: 23px;
     }
 
-    #trend > div {
-        grid-template-columns: repeat(2,1fr);
+    #top_navigators img {
+        width: 20px;
+    }
+
+    #catagory>div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #newArrival>div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #trend>div {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     #view {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    #footer > div:nth-child(1) {
-        grid-template-columns: repeat(2,1fr);
+    #footer>div:nth-child(1) {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
 /* Small screen */
-@media all and (max-width: 601px) and (min-width:200px) {
+@media all and (max-width: 700px) and (min-width:0px) {
 
-    #navbar > #top > div:nth-child(1) {
-        margin-left: auto;
+    #top>div:nth-child(1) {
+        display: none;
     }
 
-    /* #navbar > #mid {
-        width: 90%;
+    #brand_logo>img {
+        width: 180px;
     }
 
-    #mid > div > p {
-        font-size: 5px;
-        letter-spacing: 0px;
-    } */
-
-    #catagory > div {
-        grid-template-columns: repeat(1,1fr);
+    #top_navigators>p {
+        font-size: 13px;
     }
 
-    #newArrival > div {
-        grid-template-columns: repeat(1,1fr);
+    #top_navigators>p>img {
+        width: 23px;
     }
 
-    #trend > div {
-        grid-template-columns: repeat(1,1fr);
+    #top_navigators img {
+        width: 20px;
+    }
+
+    #catagory>div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #newArrival>div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #trend>div {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     #view {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    #footer > div:nth-child(1) {
-        grid-template-columns: repeat(1,1fr);
+    #footer>div:nth-child(1) {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

@@ -1,4 +1,3 @@
-
 /* Universal CSS Properties */
 * {
     font-family: sans-serif;
@@ -14,6 +13,7 @@
     position: fixed;
     padding-bottom: 20px;
     background-color: white;
+    z-index: 9999;
 }
 
 #navbar {
@@ -30,42 +30,43 @@
     align-items: center;
     justify-content: flex-end;
     height: 80px;
-    width: 90%;
-}
-
-#navbar > #top > div:nth-child(1) {
-    height: 40%;
-}
-
-#navbar > #top > div:nth-child(2) {
-    margin-left: 30%;
-    width: 220px;
-    height: 30px;
-    display: flex;
-    gap: 23px;
-
-}
-
-#navbar > #top > div:nth-child(1) > img {
     width: 100%;
-    height: 30px;
 }
 
-
-#navbar > #top > div:nth-child(2) > button {
-    width: 10%;
-    height: 60%;
-    background: none;
-    border: none;
+#top>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-
-#navbar > #top > div:nth-child(2) > img {
-    width: 10%;
-    height: 80%;
+#brand_logo>img {
+    width: 220px
 }
 
-#navbar > #mid {
+#top_navigators {
+    gap: 20px;
+}
+
+#top_navigators>p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#top_navigators>p>img {
+    width: 28px;
+    opacity: 80%;
+}
+
+#top_navigators img {
+    width: 25px;
+}
+
+#navbar>#mid {
     width: 80%;
     gap: 3%;
     margin: auto;
@@ -74,7 +75,7 @@
     flex-wrap: wrap;
 }
 
-#mid > div > p {
+#mid>div>p {
     width: 100%;
     font-size: 15px;
     letter-spacing: 2px;
@@ -101,22 +102,22 @@
     gap: 5%;
     justify-content: center;
 }
-  
-.dropdown-menu > div {
+
+.dropdown-menu>div {
     margin-top: 25px;
 }
 
-.dropdown-menu > div > h5 {
+.dropdown-menu>div>h5 {
     font-size: 12px;
     letter-spacing: 2px;
 }
 
-.dropdown-menu > div >  p {
+.dropdown-menu>div>p {
     font-size: 12px;
     padding-top: -3px;
 }
 
-.dropdown-menu > div > li > a {
+.dropdown-menu>div>li>a {
     color: #000;
     text-decoration: none;
     font-size: 12px;
@@ -133,7 +134,7 @@
     padding-bottom: 40px;
     -webkit-transition: all .5s, background, 2s .5s linear;
     transition: all .5s, background 2s .5s linear;
-    
+
 }
 
 .dropdown:hover .slideUp {
@@ -144,14 +145,15 @@
 
 @keyframes text {
     from {
-      margin-top: 200px;
-      opacity: 0%;
+        margin-top: 200px;
+        opacity: 0%;
     }
+
     to {
-      margin-top: 25px;
-      opacity: 100%;
+        margin-top: 25px;
+        opacity: 100%;
     }
-  }
+}
 
 /* Hover Underline animation */
 .hover-underline-animation {
@@ -159,7 +161,7 @@
     position: relative;
     color: black;
 }
-  
+
 .hover-underline-animation::after {
     content: '';
     position: absolute;
@@ -172,7 +174,7 @@
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
-  
+
 .hover-underline-animation:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -193,11 +195,11 @@
     font-size: 15px;
 }
 
-#slider > p {
+#slider>p {
     padding-top: 10px;
 }
 
-#slider > p > span {
+#slider>p>span {
     font-weight: bold;
 }
 
@@ -215,28 +217,28 @@
     margin: auto;
 }
 
-#bannerText > p {
+#bannerText>p {
     letter-spacing: 2px;
 }
 
-#bannerText > h1 {
+#bannerText>h1 {
     font-family: serif;
     font-size: 70px;
 }
 
-#bannerText > div {
+#bannerText>div {
     display: flex;
     gap: 15px;
     justify-content: center;
 }
 
-#bannerText > div > button {
+#bannerText>div>button {
     height: 40px;
     letter-spacing: 2px;
     padding: 10px;
     background-color: white;
     border: none;
-} 
+}
 
 #discount {
     width: 100%;
@@ -248,7 +250,7 @@
     border-bottom: 1px solid #e6e6e6;
 }
 
-#discount > div {
+#discount>div {
     height: 90%;
     width: 25%;
     color: white;
@@ -256,41 +258,41 @@
     text-align: center;
 }
 
-#discount > div > h1 {
+#discount>div>h1 {
     font-family: serif;
     font-size: 50px;
 }
 
-#discount > div:nth-child(1) > h2:nth-child(1) {
+#discount>div:nth-child(1)>h2:nth-child(1) {
     margin-top: 320px;
 }
 
-#discount > div:nth-child(2) > h2:nth-child(1) {
+#discount>div:nth-child(2)>h2:nth-child(1) {
     margin-top: 220px;
 }
 
-#discount > div:nth-child(3) > h2:nth-child(1) {
+#discount>div:nth-child(3)>h2:nth-child(1) {
     margin-top: 270px;
 }
 
-#discount > div > button {
+#discount>div>button {
     border: none;
     height: 40px;
-    font-size:15px;
+    font-size: 15px;
     font-weight: bold;
     padding: 0px 10px 0px 10px;
 }
 
-#discount > div:nth-child(1) {
+#discount>div:nth-child(1) {
     background-image: url(https://cdn.shopify.com/s/files/1/0248/3473/6191/files/VENDOR_ASSET_-Extra_15_Off_Select_Luxe_Staples_540x.png?v=1671459534);
-    
+
 }
 
-#discount > div:nth-child(2) {
+#discount>div:nth-child(2) {
     background-image: url(https://cdn.shopify.com/s/files/1/0248/3473/6191/files/WEB_ASSET_2_540x.jpg?v=1650894933);
 }
 
-#discount > div:nth-child(3) {
+#discount>div:nth-child(3) {
     background-image: url(https://cdn.shopify.com/s/files/1/0248/3473/6191/files/womens_tops_2_540x.jpg?v=1630508297);
 }
 
@@ -299,31 +301,31 @@
     width: 100%;
 }
 
-#catagory > h1 {
+#catagory>h1 {
     text-align: center;
     font-family: serif;
-    font-weight:500;
+    font-weight: 500;
     font-size: 35px;
 }
 
-#catagory > div {
+#catagory>div {
     display: grid;
     width: 75%;
     gap: 10px;
     margin: auto;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
-#catagory > div > div {
+#catagory>div>div {
     text-align: center;
 }
 
-#catagory > div > div > img {
+#catagory>div>div>img {
     width: 90%;
     height: 260px;
 }
 
-#catagory > div > div > img:hover {
+#catagory>div>div>img:hover {
     transform: scale(1.03);
     transition: all .8s ease;
 }
@@ -334,23 +336,23 @@
     border-bottom: 1px solid #e6e6e6;
 }
 
-#newArrival > h1 {
+#newArrival>h1 {
     font-family: serif;
-    font-weight:lighter;
+    font-weight: lighter;
     font-size: 35px;
 }
 
-#newArrival > button {
+#newArrival>button {
     width: 120px;
     height: 35px;
     background-color: white;
     border: 1px solid #e6e6e6;
 }
 
-#newArrival > div {
+#newArrival>div {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -358,18 +360,18 @@
     justify-content: center;
 }
 
-#newArrival > div > div > img {
+#newArrival>div>div>img {
     width: 90%;
     height: 270px;
 }
 
-#newArrival > div > div > img + p {
+#newArrival>div>div>img+p {
     width: 250px;
     letter-spacing: 2px;
     margin: auto;
 }
 
-#newArrival > div > div > img + p + p {
+#newArrival>div>div>img+p+p {
     font-size: 15px;
 }
 
@@ -382,23 +384,23 @@
     text-align: center;
 }
 
-#trend > h1 {
+#trend>h1 {
     text-align: center;
     font-family: serif;
-    font-weight:500;
+    font-weight: 500;
     font-size: 35px;
 }
 
-#trend > button {
+#trend>button {
     width: 120px;
     height: 35px;
     background-color: white;
     border: 1px solid #e6e6e6;
 }
 
-#trend > div {
+#trend>div {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     width: 80%;
     margin: auto;
     margin-top: 30px;
@@ -407,18 +409,18 @@
     justify-content: center;
 }
 
-#trend > div > div > img {
+#trend>div>div>img {
     width: 90%;
     height: 320px;
 }
 
-#trend > div > div > img + p {
+#trend>div>div>img+p {
     width: 240px;
     margin: auto;
     letter-spacing: 2px;
 }
 
-#trend > div > div > img + p + p {
+#trend>div>div>img+p+p {
     font-size: 15px;
 }
 
@@ -426,12 +428,12 @@
     width: 100%;
     height: 720px;
     display: flex;
-    border-bottom: 1px solid #e6e6e6; 
-    justify-content: center; 
-    gap: 7px; 
+    border-bottom: 1px solid #e6e6e6;
+    justify-content: center;
+    gap: 7px;
 }
 
-#story > div {
+#story>div {
     width: 18%;
     height: 90%;
     background-color: whitesmoke;
@@ -466,10 +468,10 @@
     margin: 0px -9px -9px -9px;
 }
 
-#footer > div:nth-child(1) {
+#footer>div:nth-child(1) {
     width: 75%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     background: white;
     padding-top: 23px;
     gap: 22px;
@@ -477,23 +479,23 @@
     margin: auto;
 }
 
-#footer > div:nth-child(1) > div {
+#footer>div:nth-child(1)>div {
     text-align: center;
     height: 540px;
 }
 
-#footer > div:nth-child(1) > div > img {
+#footer>div:nth-child(1)>div>img {
     width: 100%;
     height: 63%;
 }
 
-#footer > div:nth-child(1) > div > h2 {
+#footer>div:nth-child(1)>div>h2 {
     font-family: serif;
     font-weight: lighter;
     padding: 0px 1% 0px 1%;
 }
 
-#footer > div:nth-child(1) > div > button {
+#footer>div:nth-child(1)>div>button {
     width: auto;
     height: 35px;
     padding: auto 10px 0px 10px;
@@ -502,7 +504,7 @@
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
-#footer > div:nth-child(2) {
+#footer>div:nth-child(2) {
     height: 540px;
     width: 100%;
     background: #e6e6e6;
@@ -518,23 +520,24 @@
 #middle {
     height: 40%;
     width: 65%;
-    gap:4%;
+    gap: 4%;
     display: flex;
     margin-left: 9.8%;
 }
 
-#middle > div {
+#middle>div {
     height: 100%;
     width: 20%;
     font-size: 15px;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
     font-size: 15px;
 }
 
-#middle > div:nth-child(3) {
+#middle>div:nth-child(3) {
     width: 30%;
     margin-left: 90px;
 }
@@ -546,28 +549,29 @@ a{
     display: grid;
     padding-right: 17%;
 }
-#sub > input {
+
+#sub>input {
     height: 38px;
 }
 
-#sub > input[type="text"] {
+#sub>input[type="text"] {
     padding-left: 15px;
     font-size: 16px;
 }
 
-#sub > input[type="submit"] {
+#sub>input[type="submit"] {
     background-color: black;
     color: white;
     font-weight: bold;
     font-size: 16px;
 }
 
-#sub + div {
+#sub+div {
     height: 20%;
     margin-top: 20px;
 }
 
-#sub + div > img {
+#sub+div>img {
     height: 100%;
 }
 
@@ -578,10 +582,10 @@ a{
     font-size: 12px;
 }
 
-#down > img {
+#down>img {
     height: 50%;
 }
 
-#down > p {
+#down>p {
     padding-top: 10px;
 }
